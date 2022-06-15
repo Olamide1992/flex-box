@@ -1,21 +1,33 @@
+@import url("httpS://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Lexend+Deca:wght@700&display=swap");
+
 /*Desktop Navigation*/
-@media screen and (max-width: 1500px) {
-  * {
-    width: 1440px;
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 30px;
+  }
+}
+
+/*Laptop Small*/
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 25px;
+  }
+}
+
+/* Tablet*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
   }
 }
 
 /*Mobile Navigation*/
-
-@media screen and (max-width: 480px) {
-  * {
-    width: 375px;
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 15px;
   }
 }
 
-body {
-  font-size: 15px;
-}
 main {
   margin: 0px 70px;
   background-color: hsl(0, 0%, 95%);
@@ -48,7 +60,7 @@ img {
 h2 {
   padding: 20px;
   color: hsl(0, 0%, 95%);
-  font-family: "Big Shoulders Display";
+  font-family: "Big Shoulders Display", "cursive";
   font-weight: 700;
 }
 
@@ -76,7 +88,68 @@ button {
 p {
   padding: 10px;
   color: hsla(0, 0%, 100%, 0.75);
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400px;
   text-overflow: initial;
 }
+
+
+/*grid.html styling*/
+
+.grid{
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'A A B'
+  'C D D'
+  'C E E';
+
+  gap:10px;
+  background-color: rgb(2, 2, 27);
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+
+  
+
+.item1{
+  grid-area: A;
+  background-color: red;
+  padding: 32px;
+  
+}
+
+.item2{
+  grid-area: B;
+  background-color: orange;
+  padding: 32px;
+  
+}
+
+.item3{
+  grid-area: C;
+  background-color: green;
+  padding: 32px;
+  
+}
+
+.item4{
+  grid-area: D;
+  background-color: rgb(0, 153, 255);
+  padding: 20px;
+}
+
+.item5{
+  grid-area: E;
+  background-color: rgb(0, 153, 255);
+  padding: 20px;
+}
+
