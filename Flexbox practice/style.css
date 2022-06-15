@@ -1,0 +1,82 @@
+/*Desktop Navigation*/
+@media screen and (max-width: 1500px) {
+  * {
+    width: 1440px;
+  }
+}
+
+/*Mobile Navigation*/
+
+@media screen and (max-width: 480px) {
+  * {
+    width: 375px;
+  }
+}
+
+body {
+  font-size: 15px;
+}
+main {
+  margin: 0px 70px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.Sed {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.Suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Lux {
+  background-color: hsl(179, 100%, 13%);
+}
+
+img {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+h2 {
+  padding: 20px;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+}
+
+button {
+  margin: 20px;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 10px;
+  border: 0px;
+  background-color: (0, 0%, 95%);
+}
+
+.seds {
+  color: rgb(209, 139, 8);
+}
+
+.suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxs {
+  color: hsl(179, 100%, 13%);
+}
+
+p {
+  padding: 10px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-weight: 400px;
+  text-overflow: initial;
+}
